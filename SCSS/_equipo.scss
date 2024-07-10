@@ -1,0 +1,55 @@
+/* MAIN EQUIPO */
+.mainequipo {
+    background-color: $color-fondo;
+}
+.titulo-equipo {
+    padding: 30px 0px;
+    @include flex-center;
+}
+.equipobarber {
+    height: 500px;
+    display: flex;
+    overflow-x: auto;
+}
+.tarjetabarbero {
+    height: 400px;
+    @include flex-center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 5px;
+    border: 1px solid transparent;
+}
+.nombrebarbero,
+.obbarbero,
+.enbarbero {
+    opacity: 0;
+    transition: 0.5s;
+}
+.obbarbero {
+    background-color: #837c67;
+    width: 255px;
+    text-align: center;
+}
+.barbero {
+    width: 200px;
+}
+.tarjetabarbero {
+    &:hover {
+        background-color: beige;
+        border: 1px solid black;
+        box-shadow: 0px 1px 6px rgb(0, 0, 0);
+        .barbero{
+            width: 240px;
+        }
+        .nombrebarbero{
+            @include tarjetahover;
+            font-size: x-large;
+        }
+        .obbarbero,
+        .enbarbero {
+            @include tarjetahover;
+            font-size: large;
+            color: white;
+        }
+    }
+}

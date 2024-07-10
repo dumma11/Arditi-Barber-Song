@@ -1,0 +1,85 @@
+@media (min-width:1320px) {
+    .equipobarber {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:950px) {
+    /* GALERIA */
+    .maingaleria {
+        padding: 30px 5px;
+    }    
+    .fila {
+        height: 195px;
+        img {
+            height: 150px;
+            &:hover {
+                height: 154px;
+            }
+        }
+    }
+    /* CONTACTO */
+    .maincontacto {
+        padding: 40px 10px; 
+    }
+}
+@media (max-width:500px) {
+    /*FOOTER*/
+    .footer-datos{
+        margin-top: 30px;
+    }
+    /* GALERIA */
+    .maingaleria {
+        padding: 30px 5px;
+    }
+    .fila {
+        height: 145px;
+        img {
+            height: 100px;
+            margin: 30px 4px 10px 10px;
+            &:hover {
+                height: 105px;
+            }
+        }
+    }
+    /* CONTACTO */
+    .maincontacto {
+        padding: 40px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px repeat(2, 200px) 450px;
+        grid-template-areas:
+        "areatitulo"
+        "areamapa"
+        "areadatos"
+        "areaform";
+    }
+    input {
+        width: 100%
+    }
+    .textoform {
+        width: 100%;
+        height: 150px;
+    }
+    /* MAIN EQUIPO */
+    .equipobarber {
+        height: 500px;
+    }
+    .obbarbero {
+        width: 200px;
+    }
+    .barbero {
+        width: 180px;
+    }
+    .tarjetabarbero {
+        margin: 0px 5px;
+        &:hover{
+            .obbarbero{
+                font-size: medium;
+            }
+            .barbero {
+                margin: 0px 0px;
+                width: 200px;
+            }
+        }    
+    }
+}

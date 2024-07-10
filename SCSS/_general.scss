@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    font-family: map-get($fuentes, enlaces);
+}
+h1 {
+    font-family: map-get($fuentes, titulos1);
+    font-size: x-large;
+}
+h2 {
+    font-family: map-get($fuentes, titulos2);
+}
+p {
+    font-family: map-get($fuentes, parrafos);
+}

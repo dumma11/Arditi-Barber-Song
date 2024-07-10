@@ -1,0 +1,9 @@
+@mixin flex-center () {
+    display: flex;
+    justify-content: center;
+}
+@mixin tarjetahover () {
+    font-family: map-get($fuentes, titulos1);
+    opacity: 1;
+    text-decoration: solid;
+}
